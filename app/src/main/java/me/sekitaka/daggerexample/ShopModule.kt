@@ -2,11 +2,12 @@ package me.sekitaka.daggerexample
 
 import dagger.Module
 import dagger.Provides
+import javax.inject.Inject
 
 @Module
-class ShopModule {
+class ShopModule(var clerk: Clerk) {
     @Provides
     fun provideClerk(): Clerk {
-        return BadClerk()
+        return clerk
     }
 }
