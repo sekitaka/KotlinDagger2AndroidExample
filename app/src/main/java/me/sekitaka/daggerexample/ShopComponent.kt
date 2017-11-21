@@ -6,5 +6,6 @@ import javax.inject.Named
 
 @Component(modules = arrayOf(ShopModule::class))
 interface ShopComponent {
-    fun clerk(): Clerk
+//    fun clerk(): Clerk
+    fun inject(activity:MainActivity)
 }
