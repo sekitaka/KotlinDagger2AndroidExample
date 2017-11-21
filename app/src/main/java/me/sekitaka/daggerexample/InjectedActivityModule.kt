@@ -9,9 +9,6 @@ import dagger.android.AndroidInjector
 import dagger.multibindings.IntoMap
 import javax.inject.Named
 
-/**
- * Created by user544 on 2017/11/21.
- */
 @Module(subcomponents = arrayOf(InjectedActivitySubcomponent::class))
 abstract class InjectedActivityModule {
     @Binds
